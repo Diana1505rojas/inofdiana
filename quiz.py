@@ -43,7 +43,12 @@ def matrizdataframe(matriz):
     data= pd.DataFrame(matriz)
     return data
 
-matriz2d= np.array(matriz2d)
-dataframe_resultante = matriz_a_dataframe(matriz2d)
-print(dataframe_resultante)
+#punto 6
+def cargararchmat(archivo):
+    datos= sio.loadmat(archivo)
+    return datos
+
+def cargararchcsv(archivo):
+    datos= pd.readcsv(archivo)
+
 
