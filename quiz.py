@@ -50,5 +50,18 @@ def cargararchmat(archivo):
 
 def cargararchcsv(archivo):
     datos= pd.readcsv(archivo)
+    return datos
 
+#punto 7
+
+def suma(matriz2d, eje):
+    return np.sum(matriz2d, axis=eje)
+def resta(matriz2d, eje):
+    return np.subtract.reduce(matriz2d, axis=eje)
+def multiplicacion(matriz2d, eje):
+    return np.prod(matriz2d, axis=eje)
+def division(matriz2d, eje):
+    return np.divide.reduce(matriz2d, axis=eje)
+def logaritmo(matriz2d, eje):
+    return np.log(matriz2d, axis=eje)
 
