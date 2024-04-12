@@ -38,3 +38,12 @@ print("Numero de dimensiones:", matriz2d.ndim)
 print(matriz2d.shape)
 print(matriz2d)
 
+#Punto 5
+def matrizdataframe(matriz):
+    data= pd.DataFrame(matriz)
+    return data
+
+matriz2d= np.array(matriz2d)
+dataframe_resultante = matriz_a_dataframe(matriz2d)
+print(dataframe_resultante)
+
