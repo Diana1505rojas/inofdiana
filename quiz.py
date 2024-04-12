@@ -15,8 +15,7 @@ print("PUNTO 1:")
 print(matriz4d.shape)
 print(matriz4d)
 
-matriz3d= matriz4d.copy()
-matriz3d.shape=(dim1, dim2, -1)
+matriz3d= matriz4d[1].copy()
 
 print("PUNTO 2:")
 print(matriz3d.shape)
@@ -31,4 +30,11 @@ print(f"Tipo: {matriz3d.dtype}")
 print(f"Tamaño de bytes: {matriz3d.itemsize}")
 print(f"Tamaño total: {matriz3d.nbytes}")
 
+#punto 4
+matriz2d= matriz3d.reshape(dim1, -1)
+
+print("\n PUNTO 4:")
+print("Numero de dimensiones:", matriz2d.ndim)
+print(matriz2d.shape)
+print(matriz2d)
 
